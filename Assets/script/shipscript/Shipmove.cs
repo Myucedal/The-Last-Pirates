@@ -6,7 +6,7 @@ public class Shipmove : MonoBehaviour
 {
     public AudioSource yurumesesi;
     public Animator animator;
-    private bool isNearSteeringWheel = false;
+    public bool isNearSteeringWheel = false;
     private bool isSteering = false;
     Vector3 dümenPos;
     public GameObject player;
@@ -14,8 +14,13 @@ public class Shipmove : MonoBehaviour
     public GameObject dümenKamera, playerKamera;
     public float tiltAmount = 15f; // Geminin eðilme açýsý
     public float tiltSpeed = 50f; // Geminin eðilme hýzýnýn yumuþaklýðý
-
+    public static Shipmove instance;
     Collider c;
+
+    private void Awake()
+    {
+        instance = this;
+    }
     private void Start()
     {
         c = GetComponent<Collider>();
