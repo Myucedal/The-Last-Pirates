@@ -36,7 +36,7 @@ public class LeftCannonController : MonoBehaviour
         if (rb != null)
         {
             patlama.Play();
-            rb.AddForce(Vector3.left * fireForce); // Sol tarafa doðru kuvvet uygula
+            rb.AddForce(-transform.right * fireForce); // Sol tarafa doðru kuvvet uygula
         }
 
         // Mermiyi belirli bir süre sonra yok et

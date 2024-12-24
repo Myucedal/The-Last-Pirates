@@ -38,7 +38,7 @@ public class RightCannonController : MonoBehaviour
         if (rb != null)
         {
             patlama.Play();
-            rb.AddForce(Vector3.right * fireForce); // Sol tarafa doðru kuvvet uygula
+            rb.AddForce(transform.right * fireForce); // Sol tarafa doðru kuvvet uygula
         }
 
         // Mermiyi belirli bir süre sonra yok et (gereksiz bellek kullanýmýný önlemek için)
