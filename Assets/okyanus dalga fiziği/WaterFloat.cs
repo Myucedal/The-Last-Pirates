@@ -48,8 +48,6 @@ public class WaterFloat : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (FloatPoints == null || FloatPoints.Length == 0)
-            return;
         //default water surface
         var newWaterLine = 0f;
         var pointUnderWater = false;
@@ -103,10 +101,9 @@ public class WaterFloat : MonoBehaviour
     }
 
     private void OnDrawGizmos()
-    { 
-        
+    {
         Gizmos.color = Color.green;
-       if (FloatPoints == null)
+        if (FloatPoints == null)
             return;
 
         for (int i = 0; i < FloatPoints.Length; i++)
