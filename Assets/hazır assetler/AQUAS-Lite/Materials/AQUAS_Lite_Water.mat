@@ -89,9 +89,9 @@ Material:
     - _EnableRealtimeReflections: 1
     - _EnableReflections: 1
     - _Fade: 2
-    - _FarTilingDistance: 1000
+    - _FarTilingDistance: 4595.5
     - _FoamBlend: 0.2
-    - _FoamContrast: 0.276
+    - _FoamContrast: 0.413
     - _FoamIntensity: 1.92
     - _FoamSpeed: 0.1
     - _FoamTiling: 1
@@ -102,7 +102,7 @@ Material:
     - _Gloss: 0.7
     - _Glossiness: 0.5
     - _LightWrapping: 2
-    - _MediumTilingDistance: 100
+    - _MediumTilingDistance: 1301.6
     - _Metallic: 0
     - _Mode: 0
     - _NormalStrength: 1.35
@@ -110,7 +110,7 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _ProbeReflectionIntensity: 0.578
-    - _RealtimeReflectionIntensity: 1
+    - _RealtimeReflectionIntensity: 0.28
     - _ReflectionIntensity: 0.385
     - _Refraction: 0.4
     - _RefractionDistance: 10

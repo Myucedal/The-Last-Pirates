@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: f7091c1df98bb694886c204f303ef78d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - cannonBallPrefab: {fileID: 6474002908431546661, guid: bfa42b9830d371642b3a40d6b7891a83, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
