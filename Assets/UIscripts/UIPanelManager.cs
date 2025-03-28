@@ -1,35 +1,47 @@
-using script.UIscripts;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class UIPanelManager : MonoBehaviour
+namespace script.UIscripts
+
 {
-    public static UIPanelManager Instance { get; private set; }
-
-    private UIPanelBase activePanel; // Şu an açık olan panel
-
-    private void Awake()
-    {   
-        if (Instance == null)
-            Instance = this;
-        else
-            Destroy(gameObject);
-    }
-
-    public void SetActivePanel(UIPanelBase panel)
+    public class UIPanelManager : MonoBehaviour
     {
-        if (activePanel != null && activePanel != panel)
+        private static UIPanelManager instance;
+        private List<UIPanelBase> openPanels = new List<UIPanelBase>();
+
+        private void Awake()
         {
-            activePanel.Hide(); // Önceki paneli kapat
+            if (instance == null)
+            {
+                instance = this;
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
-        activePanel = panel;
-    }
 
-    public void CloseCurrentPanel()
-    {
-        if (activePanel != null)
+        public static void OpenPanel(UIPanelBase panel)
         {
-            activePanel.Hide();
-            activePanel = null;
+            instance.CloseAllPanels();
+            panel.Show();
+            instance.openPanels.Add(panel);
+        }
+
+        public static void ClosePanel(UIPanelBase panel)
+        {
+            panel.Hide();
+            instance.openPanels.Remove(panel);
+        }
+
+        public static void CloseAllPanels()
+        {
+            foreach (var panel in instance.openPanels)
+            {
+                panel.Hide();
+            }
+
+            instance.openPanels.Clear();
         }
     }
 }
