@@ -1,19 +1,38 @@
-using script.UIscripts;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class TooltipPanel : UIPanelBase, IPointerClickHandler
+public class TooltipPanel : MonoBehaviour, IPointerClickHandler
 {
-    public TextMeshProUGUI tooltipText;
+    public UIButtonHover uıButtonHover;
 
-    public void SetText(string message)
+    private void Start()
     {
-        tooltipText.text = message;
+        if (uıButtonHover == null)
+        {
+            uıButtonHover = gameObject.GetComponent<UIButtonHover>();
+        }
     }
 
+    // Tooltip içindeki yazıyı değiştir
+    public void SetText(string message)
+    {
+        TextMeshProUGUI tooltipText = GetComponentInChildren<TextMeshProUGUI>(); // Tooltip'teki yazıyı bul
+        tooltipText.text = message; // Mesajı ata
+    }
+    
+
+
+    // Buton ile ilişkilendir
+    public void SetParentButton(UIButtonHover button)
+    {
+        uıButtonHover = button;
+    }
+
+    // Tooltip'e tıklandığında kapatma işlemi
     public void OnPointerClick(PointerEventData eventData)
     {
-        UIPanelManager.ClosePanel(this);
+        // Tooltip'e tıklanırsa, butonun tooltip'i kapatması sağlanır
+        uıButtonHover.ClosePanel();
     }
 }

@@ -1444,7 +1444,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -615, y: 327}
+  m_AnchoredPosition: {x: 869, y: 327}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &741757802
@@ -1459,7 +1459,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a7de866afda6d1419486bf090fb1bb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tooltipPrefab: {fileID: 5430291134094672453, guid: 550406028cc7f7c4d8e3cf4f74f452c6, type: 3}
+  tooltipPrefab: {fileID: 7414650305657589070, guid: 9ba26d73b04ba5046ae429968fd8a763, type: 3}
   canvasTransform: {fileID: 51389473}
 --- !u!114 &741757803
 MonoBehaviour:
@@ -1639,7 +1639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a7de866afda6d1419486bf090fb1bb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tooltipPrefab: {fileID: 5430291134094672453, guid: 550406028cc7f7c4d8e3cf4f74f452c6, type: 3}
+  tooltipPrefab: {fileID: 7414650305657589070, guid: 9ba26d73b04ba5046ae429968fd8a763, type: 3}
   canvasTransform: {fileID: 51389473}
 --- !u!114 &814025150
 MonoBehaviour:
@@ -1910,7 +1910,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a7de866afda6d1419486bf090fb1bb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tooltipPrefab: {fileID: 5430291134094672453, guid: 550406028cc7f7c4d8e3cf4f74f452c6, type: 3}
+  tooltipPrefab: {fileID: 7414650305657589070, guid: 9ba26d73b04ba5046ae429968fd8a763, type: 3}
   canvasTransform: {fileID: 51389473}
 --- !u!114 &888166377
 MonoBehaviour:
@@ -2635,7 +2635,7 @@ Terrain:
   m_GameObject: {fileID: 1227116624}
   m_Enabled: 1
   serializedVersion: 6
-  m_TerrainData: {fileID: 15600000, guid: 0ab7e7a27d76e06458a371cd402d99b2, type: 2}
+  m_TerrainData: {fileID: 0}
   m_TreeDistance: 5000
   m_TreeBillboardDistance: 50
   m_TreeCrossFadeLength: 5
@@ -2948,7 +2948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a7de866afda6d1419486bf090fb1bb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tooltipPrefab: {fileID: 5430291134094672453, guid: 550406028cc7f7c4d8e3cf4f74f452c6, type: 3}
+  tooltipPrefab: {fileID: 7414650305657589070, guid: 9ba26d73b04ba5046ae429968fd8a763, type: 3}
   canvasTransform: {fileID: 51389473}
 --- !u!114 &1311450336
 MonoBehaviour:

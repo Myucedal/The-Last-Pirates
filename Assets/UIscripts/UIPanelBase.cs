@@ -9,7 +9,6 @@ namespace script.UIscripts
         public virtual void Show()
         {
             gameObject.SetActive(true);
-            UIPanelManager.Instance.SetActivePanel(this); 
         }    
         public virtual void Hide()
         {

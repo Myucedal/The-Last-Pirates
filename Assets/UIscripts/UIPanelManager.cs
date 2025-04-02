@@ -6,7 +6,7 @@ namespace script.UIscripts
 {
     public class UIPanelManager : MonoBehaviour
     {
-        private static UIPanelManager instance;
+        public static UIPanelManager instance;
         private List<UIPanelBase> openPanels = new List<UIPanelBase>();
 
         private void Awake()
@@ -21,20 +21,20 @@ namespace script.UIscripts
             }
         }
 
-        public static void OpenPanel(UIPanelBase panel)
+        public void OpenPanel(UIPanelBase panel)
         {
-            instance.CloseAllPanels();
+            CloseAllPanels();
             panel.Show();
             instance.openPanels.Add(panel);
         }
 
-        public static void ClosePanel(UIPanelBase panel)
+        public void ClosePanel(UIPanelBase panel)
         {
             panel.Hide();
             instance.openPanels.Remove(panel);
         }
 
-        public static void CloseAllPanels()
+        public void CloseAllPanels()
         {
             foreach (var panel in instance.openPanels)
             {
@@ -43,5 +43,7 @@ namespace script.UIscripts
 
             instance.openPanels.Clear();
         }
+
+
     }
 }
