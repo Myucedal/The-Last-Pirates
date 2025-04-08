@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 6028669200231580822}
   - component: {fileID: 6871694569886466642}
   - component: {fileID: 3543586545968327543}
-  - component: {fileID: 7020816129100427199}
   - component: {fileID: 856273666897877573}
   - component: {fileID: 1664237342648531584}
+  - component: {fileID: 1153386667831060432}
   m_Layer: 0
   m_Name: Gulle
   m_TagString: Untagged
@@ -86,20 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &7020816129100427199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6474002908431546661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 976e7c87f461ac048b34adf66f4bc3e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosionEffectPrefab: {fileID: 19800012, guid: 1d5eb0e65111e104d83e6876973a2a81, type: 3}
-  destroyDelay: 5
 --- !u!135 &856273666897877573
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -115,7 +101,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -148,3 +134,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &1153386667831060432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6474002908431546661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06b5c0e9a766e664481436cf95f2d4ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

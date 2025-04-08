@@ -17,8 +17,8 @@ public class TooltipPanel : MonoBehaviour, IPointerClickHandler
     // Tooltip içindeki yazıyı değiştir
     public void SetText(string message)
     {
-        TextMeshProUGUI tooltipText = GetComponentInChildren<TextMeshProUGUI>(); // Tooltip'teki yazıyı bul
-        tooltipText.text = message; // Mesajı ata
+        TextMeshProUGUI tooltipText = GetComponentInChildren<TextMeshProUGUI>(); 
+        tooltipText.text = message; 
     }
     
 
@@ -32,7 +32,6 @@ public class TooltipPanel : MonoBehaviour, IPointerClickHandler
     // Tooltip'e tıklandığında kapatma işlemi
     public void OnPointerClick(PointerEventData eventData)
     {
-        // Tooltip'e tıklanırsa, butonun tooltip'i kapatması sağlanır
         uıButtonHover.ClosePanel();
     }
 }

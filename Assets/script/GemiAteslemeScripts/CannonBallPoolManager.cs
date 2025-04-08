@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,13 @@ public class CannonBallPoolManager : MonoBehaviour
     [SerializeField] private GameObject cannonBallPrefab;
     [SerializeField] private int poolSize = 16; // 8 top havuzu
     private Queue<GameObject> cannonBallPool = new Queue<GameObject>();
+    public static CannonBallPoolManager Instance;
+
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     private void Start()
     {
